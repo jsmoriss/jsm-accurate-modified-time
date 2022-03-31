@@ -19,11 +19,11 @@ Updates the WordPress post/page modified time when the output from a post/page s
 
 WordPress updates the post/page modified time only when you save/update the post/page in the editor.
 
-If you have shortcodes or blocks that create dynamic content (ie. from queries, files, feeds, etc.), the post/page modified time will not reflect these dynamic content changes.
+**If you have shortcodes or blocks that create dynamic content (ie. from queries, files, feeds, etc.), the post/page modified time will not reflect these dynamic content changes.**
 
 JSM's Accurate Modified Time plugin monitors the post/page content for changes and updates the post/page modified time as required.
 
-After activating this plugin, if you also use a social or search optimization plugin (ie. WPSSO Core, for example), the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will always include accurate modification times.
+Once activated, if you use a social or search optimization plugin (ie. WPSSO Core, Yoast SEO, etc.), the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will show an accurate modification time.
 
 == Installation ==
 
