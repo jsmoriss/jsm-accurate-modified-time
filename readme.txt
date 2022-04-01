@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
-Tags: modified, time, change, update, dynamic, accurate
+Tags: modified, date, time, update, dynamic, block, shortcode, post
 Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.2
@@ -19,7 +19,7 @@ Updates the WordPress post/page modified time when the output from a post/page s
 
 WordPress updates the post/page modified time only when you save/update the post/page in the editor.
 
-**If you have shortcodes or blocks that create dynamic content (ie. from queries, files, feeds, etc.), the post/page modified time will not reflect these dynamic content changes.**
+**If you have shortcodes or blocks that create dynamic content (ie. returning content from queries, files, feeds, etc.), the post/page modified time will not reflect these dynamic content changes.**
 
 JSM's Accurate Modified Time plugin monitors the post/page content for changes and updates the post/page modified time as required.
 
@@ -49,7 +49,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.0 (2022/03/31)**
+**Version 1.0.0 (2022/04/01)**
 
 * **New Features**
 	* Initial release.
@@ -67,5 +67,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.0.0 =
 
-(2022/03/31) Initial release.
+(2022/04/01) Initial release.
 
