@@ -92,7 +92,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 								'post_modified'     => current_time( $type = 'mysql', $gmt = false ),
 								'post_modified_gmt' => current_time( $type = 'mysql', $gmt = true ),
 							);
-						
+
 							$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post->ID ) );
 
 							/**
