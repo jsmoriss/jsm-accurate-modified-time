@@ -1,8 +1,8 @@
-# Copyright (C) 2022 JSM's Accurate Modified Time
-# This file is distributed under the same license as the JSM's Accurate Modified Time package.
+# Copyright (C) 2022 JSM's Accurate Modified Time for SEO
+# This file is distributed under the same license as the JSM's Accurate Modified Time for SEO package.
 msgid ""
 msgstr ""
-"Project-Id-Version: JSM's Accurate Modified Time 1.0.0\n"
+"Project-Id-Version: JSM's Accurate Modified Time for SEO 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/jsm-accurate-"
 "modified-time\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #. Plugin Name of the plugin/theme
-msgid "JSM's Accurate Modified Time"
+msgid "JSM's Accurate Modified Time for SEO"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
