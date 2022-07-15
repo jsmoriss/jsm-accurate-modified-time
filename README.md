@@ -18,5 +18,7 @@
 
 <p><strong>If you have shortcodes or blocks that create dynamic content (ie. returning content from queries, files, feeds, etc.), the post/page modified time will not reflect these dynamic content changes.</strong></p>
 
-<p>JSM's Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the post/page modified time as required. Once activated, if you use a social and search optimization plugin (ie. WPSSO Core, Yoast SEO, etc.), the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will always show an accurate modification time.</p>
+<p>JSM's Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the post/page modified time as required.</p>
+
+<p>If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show an accurate modification time if your post/page content changes.</p>
 
