@@ -51,7 +51,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 			return self::$instance;
 		}
 
-		/**
+		/*
 		 * When using this filter it’s important to check if you’re filtering the content in the main query with the
 		 * conditionals is_main_query() and in_the_loop(). The main post query can be thought of as the primary post loop
 		 * that displays the main content for a post, page or archive. Without these conditionals you could unintentionally
@@ -63,7 +63,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 			if ( is_main_query() && is_singular() && in_the_loop() ) {
 
-				/**
+				/*
 				 * U = Invert greediness of quantifiers, so they are NOT greedy by default.
 				 * s = A dot metacharacter in the pattern matches all characters, including newlines.
 				 */
@@ -95,7 +95,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 							$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post->ID ) );
 
-							/**
+							/*
 							 * If the WPSSO Core plugin is active, clear the post ID cache.
 							 */
 							if ( class_exists( 'Wpsso' ) ) {
