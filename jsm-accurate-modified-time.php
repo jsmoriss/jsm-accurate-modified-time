@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Plugin Name: JSM's Accurate Modified Time for SEO
  * Text Domain: jsm-accurate-modified-time
  * Domain Path: /languages
