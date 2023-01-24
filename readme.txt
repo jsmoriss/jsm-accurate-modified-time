@@ -9,7 +9,7 @@ Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
 Tags: modified, date, time, update, dynamic, block, shortcode, post
 Contributors: jsmoriss
 Requires PHP: 7.2
-Requires At Least: 5.2
+Requires At Least: 5.4
 Tested Up To: 6.1.1
 Stable Tag: 1.0.0
 
@@ -61,7 +61,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Requires At Least**
 	* PHP v7.2.
-	* WordPress v5.2.
+	* WordPress v5.4.
 
 == Upgrade Notice ==
 
