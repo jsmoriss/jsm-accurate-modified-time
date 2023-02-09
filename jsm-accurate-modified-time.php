@@ -102,7 +102,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 								$wpsso =& Wpsso::get_instance();
 
-								$wpsso->post->clear_cache( $post->ID );
+								$wpsso->post->refresh_cache( $post->ID );	// Refresh the cache for a single post ID.
 							}
 						}
 					}
