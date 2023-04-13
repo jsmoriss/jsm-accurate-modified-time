@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
-Tags: modified, date, time, update, dynamic, block, shortcode, post
+Tags: seo, post, content, shortcode, block, modified, time
 Contributors: jsmoriss
 Requires PHP: 7.2
 Requires At Least: 5.5
