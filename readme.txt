@@ -23,7 +23,7 @@ WordPress updates the post/page modified time only when you save/update the post
 
 = The Solution: =
 
-JSM's Accurate Modified Time for SEO plugin monitors the post/page content for changes, and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, etc., after activating this plugin, the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will show an accurate modification time if/when your post/page content changes.
+JSM's Accurate Modified Time for SEO plugin monitors the post/page content for changes, and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, etc., after activating this plugin the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will show an accurate modification time if/when your post/page content changes.
 
 == Installation ==
 
