@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: JSM's Accurate Modified Time for SEO
+ * Plugin Name: JSM Accurate Modified Time for SEO
  * Text Domain: jsm-accurate-modified-time
  * Domain Path: /languages
  * Plugin URI: https://surniaulula.com/extend/plugins/jsm-accurate-modified-time/
