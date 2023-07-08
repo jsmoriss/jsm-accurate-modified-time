@@ -13,7 +13,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.5
  * Tested Up To: 6.2.2
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -77,12 +77,11 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 				if ( ! empty( $post->ID ) ) {
 
 					$md5_meta = '_content_md5';
-
-					$md5_last = get_post_meta( $post->ID, $md5_meta, $single = true );
+					$md5_last = get_metadata( 'post', $post->ID, $md5_meta, $single = true );
 
 					if ( $md5_last !== $md5_current ) {
 
-						update_post_meta( $post->ID, $md5_meta, $md5_current );
+						update_metadata( 'post', $post->ID, $md5_meta, $md5_current );
 
 						if ( ! empty( $md5_last ) ) {
 
@@ -96,7 +95,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 							$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post->ID ) );
 
 							/*
-							 * If the WPSSO Core plugin is active, clear the post ID cache.
+							 * If the WPSSO Core plugin is active, refresh the post cache.
 							 */
 							if ( class_exists( 'Wpsso' ) ) {
 
