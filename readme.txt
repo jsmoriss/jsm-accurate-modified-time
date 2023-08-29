@@ -10,7 +10,7 @@ Tags: seo, post, content, shortcode, block, modified, time
 Contributors: jsmoriss
 Requires PHP: 7.2.34
 Requires At Least: 5.5
-Tested Up To: 6.3.0
+Tested Up To: 6.3.1
 Stable Tag: 1.0.1
 
 Updates the WordPress post/page modified time when the output from a post/page shortcode or block changes.
