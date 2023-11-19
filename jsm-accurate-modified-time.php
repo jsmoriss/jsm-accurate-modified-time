@@ -52,7 +52,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 		}
 
 		/*
-		 * When using this filter it’s important to check if you’re filtering the content in the main query with the
+		 * When using this filter it's important to check if you're filtering the content in the main query with the
 		 * conditionals is_main_query() and in_the_loop(). The main post query can be thought of as the primary post loop
 		 * that displays the main content for a post, page or archive. Without these conditionals you could unintentionally
 		 * be filtering the content for custom loops in sidebars, footers, or elsewhere.
