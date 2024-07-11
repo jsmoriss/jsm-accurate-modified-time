@@ -49,12 +49,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0 (2024/07/11)**
+**Version 2.0.0 (2024/07/11)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added a call to WPSSO Core's clear cache method before calling its refresh cache method (to mimics its post save process).
+	* Added calls to cache clearing functions after updating the post modified time:
+		* WordPress `clean_post_cache()`
+		* WPSSO Core `wpsso_refresh_post_cache()`
+		* W3TC `w3tc_pgcache_flush_post()`
+		* WP Rocket `rocket_clean_post()`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -94,9 +98,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.0 =
+= 2.0.0 =
 
-(2023/07/11) Added a call to WPSSO Core's clear cache method before calling its refresh cache method (to mimics its post save process).
+(2023/07/11) Added calls to cache clearing functions after updating the post modified time.
 
 = 1.0.1 =
 
