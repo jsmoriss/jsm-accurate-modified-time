@@ -64,8 +64,8 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 			if ( is_main_query() && is_singular() && in_the_loop() ) {
 
 				/*
-				 * U = Invert greediness of quantifiers, so they are NOT greedy by default.
 				 * s = A dot metacharacter in the pattern matches all characters, including newlines.
+				 * U = Invert greediness of quantifiers, so they are NOT greedy by default.
 				 */
 				$text = preg_replace( '/[\s\n\r]+/s', ' ', $content );	// Replace newlines by a space.
 				$text = preg_replace( '/<!--.*-->/U', '', $text );	// Remove comments.
@@ -74,7 +74,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 				global $post;
 
-				if ( ! empty( $post->ID ) ) {
+				if ( ! empty( $post->ID ) ) {	// Just in case.
 
 					$md5_meta = '_content_md5';
 					$md5_last = get_metadata( 'post', $post->ID, $md5_meta, $single = true );
@@ -83,7 +83,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 						update_metadata( 'post', $post->ID, $md5_meta, $md5_current );
 
-						if ( ! empty( $md5_last ) ) {
+						if ( ! empty( $md5_last ) ) {	// Not the first run.
 
 							global $wpdb;
 
@@ -94,10 +94,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 							$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post->ID ) );
 
-							/*
-							 * If the WPSSO Core plugin is active, refresh the post cache.
-							 */
-							if ( class_exists( 'Wpsso' ) ) {
+							if ( class_exists( 'Wpsso' ) ) {	// If the WPSSO Core plugin is active, refresh its post cache.
 
 								$wpsso =& Wpsso::get_instance();
 
