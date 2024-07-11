@@ -13,7 +13,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.5.5
- * Version: 1.0.1
+ * Version: 1.1.0
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -98,7 +98,9 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 								$wpsso =& Wpsso::get_instance();
 
-								$wpsso->post->refresh_cache( $post->ID );	// Refresh the cache for a single post ID.
+								$wpsso->post->clear_cache( $post->ID );		// Clear the cache for a post ID.
+
+								$wpsso->post->refresh_cache( $post->ID );	// Refresh the cache for a post ID.
 							}
 						}
 					}
