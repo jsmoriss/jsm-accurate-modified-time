@@ -67,10 +67,11 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 				 * s = A dot metacharacter in the pattern matches all characters, including newlines.
 				 * U = Invert greediness of quantifiers, so they are NOT greedy by default.
 				 */
-				$text = preg_replace( '/[\s\n\r]+/s', ' ', $content );	// Replace newlines by a space.
-				$text = preg_replace( '/<!--.*-->/U', '', $text );	// Remove comments.
+				$text = preg_replace( '/[\s\n\r]+/s', ' ', $content );		// Replace newlines by a space.
+				$text = preg_replace( '/<!--.*-->/U', '', $text );		// Remove comments.
+				$text = preg_replace( '/(\xC2\xA0|\s)+/s', ' ', $text );	// Replace 1+ spaces to a single space.
 
-				$md5_current = md5( $text );
+				$md5_current = md5( trim( $text ) );
 
 				global $post;
 
