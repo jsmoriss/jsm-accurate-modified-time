@@ -13,7 +13,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.5.5
- * Version: 1.1.0
+ * Version: 2.0.0
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -74,7 +74,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 				global $post;
 
-				if ( ! empty( $post->ID ) ) {	// Just in case.
+				if ( ! empty( $post->ID ) && $post->ID > 0 ) {	// Just in case.
 
 					$md5_meta = '_content_md5';
 					$md5_last = get_metadata( 'post', $post->ID, $md5_meta, $single = true );
@@ -85,29 +85,55 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 						if ( ! empty( $md5_last ) ) {	// Not the first run.
 
-							global $wpdb;
+							$this->update_post_modified( $post->ID );
+			
+							$this->clean_post_cache( $post->ID );
 
-							$data = array(
-								'post_modified'     => current_time( $type = 'mysql', $gmt = false ),
-								'post_modified_gmt' => current_time( $type = 'mysql', $gmt = true ),
-							);
-
-							$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post->ID ) );
-
-							if ( class_exists( 'Wpsso' ) ) {	// If the WPSSO Core plugin is active, refresh its post cache.
-
-								$wpsso =& Wpsso::get_instance();
-
-								$wpsso->post->clear_cache( $post->ID );		// Clear the cache for a post ID.
-
-								$wpsso->post->refresh_cache( $post->ID );	// Refresh the cache for a post ID.
-							}
+							$post = get_post( $post->ID );	// Refresh the global post object.
 						}
 					}
 				}
 			}
 
 			return $content;
+		}
+		
+		public function update_post_modified( $post_id ) {
+
+			if ( ! empty( $post_id ) && $post_id > 0 ) {	// Just in case.
+
+				global $wpdb;
+
+				$data = array(
+					'post_modified'     => current_time( $type = 'mysql', $gmt = false ),
+					'post_modified_gmt' => current_time( $type = 'mysql', $gmt = true ),
+				);
+
+				$updated = $wpdb->update( $wpdb->posts, $data, $where = array( 'ID' => $post_id ) );
+			}
+		}
+
+		public function clean_post_cache( $post_id ) {
+
+			if ( ! empty( $post_id ) && $post_id > 0 ) {	// Just in case.
+
+				clean_post_cache( $post_id );	// Since WP v2.0.0.
+
+				if ( function_exists( 'wpsso_refresh_post_cache' ) ) {	// WPSSO Core plugin.
+
+					wpsso_refresh_post_cache( $post_id );
+				}
+
+				if ( function_exists( 'w3tc_pgcache_flush_post' ) ) {	// W3 Total Cache plugin.
+
+					w3tc_pgcache_flush_post( $post_id );
+				}
+
+				if ( function_exists( 'rocket_clean_post' ) ) {	// WP Rocket plugin.
+
+					rocket_clean_post( $post_id );
+				}
+			}
 		}
 	}
 
