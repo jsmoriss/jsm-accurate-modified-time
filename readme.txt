@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.5.5
-Stable Tag: 1.0.1
+Stable Tag: 2.0.0
 
 Updates the WordPress post/page modified time when the output from a post/page shortcode or block changes.
 
