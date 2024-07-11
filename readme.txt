@@ -49,6 +49,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.1.0 (2024/07/11)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a call to WPSSO Core's clear cache method before calling its refresh cache method (to mimics its post save process).
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+
 **Version 1.0.1 (2023/07/08)**
 
 * **New Features**
@@ -79,6 +93,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+
+(2023/07/11) Added a call to WPSSO Core's clear cache method before calling its refresh cache method (to mimics its post save process).
 
 = 1.0.1 =
 
