@@ -1,4 +1,4 @@
-<h1>JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math, etc.)</h1>
+<h1>JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math SEO, etc.)</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>JSM Accurate Modified Time for SEO</td></tr>
@@ -20,5 +20,5 @@
 
 <p>The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required.</p>
 
-<p>If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show accurate modification times when shortcodes or blocks updates your post/page content.</p>
+<p>If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math SEO, All in One SEO, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show accurate modification times when shortcodes or blocks updates your post/page content.</p>
 
