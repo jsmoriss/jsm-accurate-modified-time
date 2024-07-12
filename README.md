@@ -1,4 +1,4 @@
-<h1>JSM Accurate Modified Time for SEO (All SEO Plugins)</h1>
+<h1>JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math, etc.)</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>JSM Accurate Modified Time for SEO</td></tr>
@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>6.5.5</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, meta tags, schema, yoast, rankmath</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>meta tags, schema, yoast, rank math, seo</td></tr>
 </table>
 
 <h2>Description</h2>
