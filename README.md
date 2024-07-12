@@ -1,4 +1,4 @@
-<h1>JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math SEO, etc.)</h1>
+<h1>JSM Accurate Modified Time for SEO (Yoast SEO, Rank Math SEO, All in One SEO, etc.)</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>JSM Accurate Modified Time for SEO</td></tr>
