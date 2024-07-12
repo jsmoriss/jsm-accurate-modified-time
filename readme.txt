@@ -1,4 +1,4 @@
-=== JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math SEO, etc.) ===
+=== JSM Accurate Modified Time for SEO (Yoast SEO, Rank Math SEO, All in One SEO, etc.) ===
 Plugin Name: JSM Accurate Modified Time for SEO
 Plugin Slug: jsm-accurate-modified-time
 Text Domain: jsm-accurate-modified-time
