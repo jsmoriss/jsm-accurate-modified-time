@@ -1,4 +1,4 @@
-<h1>JSM Accurate Modified Time for SEO</h1>
+<h1>JSM Accurate Modified Time for SEO (All SEO Plugins)</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>JSM Accurate Modified Time for SEO</td></tr>
@@ -14,11 +14,9 @@
 
 <h2>Description</h2>
 
-<h4>The Problem:</h4>
-
 <p>WordPress updates the post/page modified time only when you save/update the post/page in the editor. If you have shortcodes or blocks that create dynamic content (ie. returning content from queries, files, feeds, etc.), the WordPress post/page modified time will not reflect these dynamic changes.</p>
 
 <h4>The Solution:</h4>
 
-<p>The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes, and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, etc., after activating this plugin the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show an accurate modification time if/when your post/page content changes.</p>
+<p>The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show accurate modification times when shortcodes or blocks updates your post/page content.</p>
 
