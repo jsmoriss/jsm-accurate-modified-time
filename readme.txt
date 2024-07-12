@@ -1,4 +1,4 @@
-=== JSM Accurate Modified Time for SEO (All SEO Plugins) ===
+=== JSM Accurate Modified Time for SEO (WPSSO Core, Yoast SEO, Rank Math, etc.) ===
 Plugin Name: JSM Accurate Modified Time for SEO
 Plugin Slug: jsm-accurate-modified-time
 Text Domain: jsm-accurate-modified-time
@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
-Tags: seo, meta tags, schema, yoast, rankmath
+Tags: meta tags, schema, yoast, rank math, seo
 Contributors: jsmoriss
 Requires PHP: 7.2.34
 Requires At Least: 5.8
