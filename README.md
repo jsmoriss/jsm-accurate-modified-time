@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>6.5.5</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, meta tags, schema, updated_time, modified_time, dateModified</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, meta tags, schema, yoast, rankmath</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -18,5 +18,7 @@
 
 <h4>The Solution:</h4>
 
-<p>The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show accurate modification times when shortcodes or blocks updates your post/page content.</p>
+<p>The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required.</p>
+
+<p>If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph <code>og:updated_time</code> and <code>article:modified_time</code> meta tags, along with the Schema markup <code>dateModified</code> property, will show accurate modification times when shortcodes or blocks updates your post/page content.</p>
 

@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
-Tags: seo, meta tags, schema, updated_time, modified_time, dateModified
+Tags: seo, meta tags, schema, yoast, rankmath
 Contributors: jsmoriss
 Requires PHP: 7.2.34
 Requires At Least: 5.8
@@ -21,7 +21,9 @@ WordPress updates the post/page modified time only when you save/update the post
 
 = The Solution: =
 
-The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required. If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will show accurate modification times when shortcodes or blocks updates your post/page content.
+The JSM Accurate Modified Time for SEO plugin monitors the post/page content for changes and updates the WordPress post/page modified time as required.
+
+If you use a social and search optimization plugin like WPSSO Core, Yoast SEO, The SEO Framework, Rank Math, etc., the Open Graph `og:updated_time` and `article:modified_time` meta tags, along with the Schema markup `dateModified` property, will show accurate modification times when shortcodes or blocks updates your post/page content.
 
 == Installation ==
 
