@@ -87,7 +87,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 						if ( ! empty( $md5_last ) ) {	// Not the first run.
 
 							$this->update_post_modified( $post->ID );
-			
+
 							$this->clean_post_cache( $post->ID );
 
 							$post = get_post( $post->ID );	// Refresh the global post object.
@@ -98,7 +98,7 @@ if ( ! class_exists( 'JsmAmt' ) ) {
 
 			return $content;
 		}
-		
+
 		public function update_post_modified( $post_id ) {
 
 			if ( ! empty( $post_id ) && $post_id > 0 ) {	// Just in case.
