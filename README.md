@@ -1,3 +1,5 @@
+
+Notice: Undefined variable: have_sched in /var/www/wpadm/wordpress/wp-content/plugins/wpsso/lib/loader.php on line 79
 <h1>JSM Accurate Modified Time for SEO (Yoast SEO, Rank Math SEO, All in One SEO, etc.)</h1>
 
 <table>
