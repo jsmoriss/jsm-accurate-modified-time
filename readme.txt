@@ -8,8 +8,8 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://jsmoriss.github.io/jsm-accurate-modified-time/assets/
 Tags: meta tags, schema, yoast, rank math, seo
 Contributors: jsmoriss
-Requires PHP: 7.2.34
-Requires At Least: 5.8
+Requires PHP: 7.4.33
+Requires At Least: 5.9
 Tested Up To: 6.6.2
 Stable Tag: 2.0.0
 
@@ -64,49 +64,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-
-**Version 1.0.1 (2023/07/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Minor code optimization and standardization:
-		* Replaced `{get|update|delete}_{comment|post|term|user}_meta()` functions by `{get|update|delete}_metadata()`.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-
-**Version 1.0.0 (2022/04/01)**
-
-* **New Features**
-	* Initial release.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
+	* PHP v7.4.33.
+	* WordPress v5.9.
 
 == Upgrade Notice ==
 
 = 2.0.0 =
 
 (2023/07/11) Added calls to cache clearing functions after updating the post modified time.
-
-= 1.0.1 =
-
-(2023/07/08) Minor code optimization and standardization.
-
-= 1.0.0 =
-
-(2022/04/01) Initial release.
 
