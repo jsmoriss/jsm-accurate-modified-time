@@ -12,7 +12,7 @@
  * Description: Update post/page modified times when output from post/page shortcodes and blocks changes.
  * Requires PHP: 7.4.33
  * Requires At Least: 5.9
- * Tested Up To: 6.8.1
+ * Tested Up To: 6.8.2
  * Version: 2.0.0
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
